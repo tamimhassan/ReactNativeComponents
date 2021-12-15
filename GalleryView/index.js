@@ -46,6 +46,11 @@ const GalleryView = () => {
           index * (IMAGE_SIZE + SPACING) - Window.width / 2 + IMAGE_SIZE / 2,
         animated: true,
       });
+    } else {
+    	thumbRef?.current?.scrollToOffset({
+        offset: 0,
+        animated: true,
+      });
     }
   };
 
